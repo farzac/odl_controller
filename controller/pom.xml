@@ -4,13 +4,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.example.parent</groupId>
+    <groupId>org.farzac.opendaylight.parent</groupId>
     <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <relativePath>../build/</relativePath>
+    <relativePath>../parent/</relativePath>
   </parent>
 
-  <artifactId>br.com.farzac.opendaylight.controller</artifactId>
+  <artifactId>org.farzac.opendaylight.controller</artifactId>
   <packaging>pom</packaging>
   <name>controller</name>
 
@@ -27,8 +27,8 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 
      <!-- this dependency is what pulls hello_world into the odl plugins directory -->
     <dependency>
-      <groupId>org.example.hello_world</groupId>
-      <artifactId>main.hello_world</artifactId>
+      <groupId>org.farzac.opendaylight.mediator</groupId>
+      <artifactId>mediator</artifactId>
       <version>0.0.3-SNAPSHOT</version>
     </dependency>
 
@@ -39,7 +39,8 @@ http://maven.apache.org/maven-v4_0_0.xsd">
         <directory>${basedir}/src/main/resources</directory>
       </resource>
       <resource>
-        <directory>${project.build.directory}/generated-resources</directory>
+        <!--<directory>${project.build.directory}/generated-resources</directory>-->
+        <directory>${project.parent.directory}/generated-resources</directory>
         <filtering>true</filtering>
       </resource>
     </resources>

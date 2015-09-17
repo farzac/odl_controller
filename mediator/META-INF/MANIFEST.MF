@@ -1,13 +1,12 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1442468518734
-Build-Jdk: 1.7.0_79
-Built-By: zaccantte
+Bnd-LastModified: 1442520100674
+Build-Jdk: 1.8.0_25
+Built-By: fabioz
 Bundle-Activator: org.opendaylight.controller.mediator.internal.Activato
  r
 Bundle-ManifestVersion: 2
 Bundle-Name: mediator
-Bundle-SymbolicName: org.example.parent.br.com.farzac.opendaylight.media
- tor
+Bundle-SymbolicName: org.farzac.opendaylight.mediator
 Bundle-Version: 0.0.3.SNAPSHOT
 Created-By: Apache Maven Bundle Plugin
 Import-Package: org.apache.felix.dm;version="[3.0,4)",org.eclipse.osgi.f

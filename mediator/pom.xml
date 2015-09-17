@@ -8,7 +8,8 @@
     <relativePath>../parent/</relativePath>
   </parent>
 
-  <artifactId>br.com.farzac.opendaylight.mediator</artifactId>
+  <groupId>org.farzac.opendaylight.mediator</groupId>  
+  <artifactId>mediator</artifactId>
   <version>0.0.3-SNAPSHOT</version>
   <name>mediator</name>
   <packaging>bundle</packaging>
@@ -26,7 +27,6 @@
               org.opendaylight.controller.sal.core,
               org.opendaylight.controller.sal.utils,
               org.opendaylight.controller.sal.packet,
-              <!--  LIBERADO BAIXO -->  
               org.opendaylight.controller.sal.core.Node,
 			  org.opendaylight.controller.sal.core.NodeConnector,
 			  org.opendaylight.controller.sal.packet.BitBufferHelper,
@@ -42,8 +42,7 @@
               org.opendaylight.controller.sal.action,
               org.opendaylight.controller.sal.flowprogrammer,
               org.opendaylight.controller.switchmanager,
-	          <!--  LIBERADO CIMA -->
-              org.apache.felix.dm,
+	          org.apache.felix.dm,
               org.osgi.service.component,
               org.slf4j,
               org.eclipse.osgi.framework.console,

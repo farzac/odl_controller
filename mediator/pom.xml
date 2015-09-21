@@ -2,13 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.example.parent</groupId>
+    <groupId>org.example.farzac</groupId>
     <artifactId>parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <relativePath>../parent/</relativePath>
   </parent>
 
-  <groupId>org.farzac.opendaylight.mediator</groupId>  
   <artifactId>mediator</artifactId>
   <version>0.0.3-SNAPSHOT</version>
   <name>mediator</name>
@@ -27,32 +26,23 @@
               org.opendaylight.controller.sal.core,
               org.opendaylight.controller.sal.utils,
               org.opendaylight.controller.sal.packet,
-              org.opendaylight.controller.sal.core.Node,
-			  org.opendaylight.controller.sal.core.NodeConnector,
-			  org.opendaylight.controller.sal.packet.BitBufferHelper,
-			  org.opendaylight.controller.sal.packet.Ethernet,
-			  org.opendaylight.controller.sal.packet.IDataPacketService,
-			  org.opendaylight.controller.sal.packet.IListenDataPacket,
-			  org.opendaylight.controller.sal.packet.Packet,
-			  org.opendaylight.controller.sal.packet.PacketResult,
-			  org.opendaylight.controller.sal.packet.RawPacket,
-			  org.slf4j.Logger,
-			  org.slf4j.LoggerFactory,	      
+	      <!--
               org.opendaylight.controller.sal.match,
               org.opendaylight.controller.sal.action,
               org.opendaylight.controller.sal.flowprogrammer,
               org.opendaylight.controller.switchmanager,
-	          org.apache.felix.dm,
+	      -->
+              org.apache.felix.dm,
               org.osgi.service.component,
               org.slf4j,
               org.eclipse.osgi.framework.console,
               org.osgi.framework
             </Import-Package>
             <Export-Package>
-              org.opendaylight.controller.mediator
+              org.farzac.opendaylight.controller
             </Export-Package>
             <Bundle-Activator>
-              org.opendaylight.controller.mediator.internal.Activator
+              org.opendaylight.controller.mediator.Activator
             </Bundle-Activator>
           </instructions>
           <manifestLocation>${project.basedir}/META-INF</manifestLocation>

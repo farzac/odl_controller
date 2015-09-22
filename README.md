@@ -16,9 +16,11 @@ Upon successful completion of a build
 cd runDir
 
 for windows
+
 run.bat
 
 for LINUX
+
 ./run.sh
 
 Wait for the osgi console to startup and then point a browser at

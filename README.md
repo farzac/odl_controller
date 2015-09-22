@@ -24,7 +24,6 @@ for linux
 ./run.sh
 
 
-
 Wait for the osgi console to startup and then point a browser at
 
 http:localhost:8080/

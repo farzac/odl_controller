@@ -15,11 +15,11 @@ Upon successful completion of a build
 
 cd runDir
 
-for windows
+#for windows
 
 run.bat
 
-for LINUX
+#for linux
 
 ./run.sh
 
